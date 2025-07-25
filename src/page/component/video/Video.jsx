@@ -197,7 +197,8 @@ function JsTreeDragToDivJquery() {
                     <div className="mt-4 text-gray-500">
                         Kéo item từ cây bên trái vào các ô bên dưới!<br/>
                         Kéo các ô bên dưới để hoán đổi vị trí video!
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 mt-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 mt-4"
+                           >
                             {cellNodeIds.map((nodeId, i) => (
                                 <CellDropzone
                                     key={i}

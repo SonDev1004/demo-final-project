@@ -13,9 +13,6 @@ function Header() {
         dispatch(logoutRequest())
     }
 
-
-
-
     return (
         <div className="bg-gray-800 mx-auto- text-white">
             <div className="container mx-auto flex justify-between items-center ">
@@ -25,6 +22,9 @@ function Header() {
                     </div>
                     <Link className='px-6 py-2 text-white hover:opacity-70 cursor-pointer' to='/'>Home</Link>
                     <Link className='px-6 py-2 text-white hover:opacity-70 cursor-pointer' to='/video'>Video</Link>
+                    <Link className='px-6 py-2 text-white hover:opacity-70 cursor-pointer' to='/instance'>Instance</Link>
+                    <Link className='px-6 py-2 text-white hover:opacity-70 cursor-pointer' to='/kanban'>Kanban</Link>
+                    <Link className='px-6 py-2 text-white hover:opacity-70 cursor-pointer' to='/canvas'>Canvas</Link>
 
                 </nav>
                 <div className="flex items-center">

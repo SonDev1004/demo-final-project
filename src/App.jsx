@@ -8,16 +8,20 @@ import {ToastContainer} from "react-toastify";
 import Header from "./page/component/Header.jsx";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Footer from "./page/component/Footer.jsx";
+import Instance from "./page/component/instance/instance.jsx";
+import Kanban from "./page/component/kanban/Kanban.jsx";
+import Canvas from "./page/component/canvas/Canvas.jsx";
 
 function App() {
-    // const {isLogin} = useSelector((state) => state.auth);
-
 
     const routes = [
         {
             element: <PrivateRouter/>, children: [
                 {path: "/", element: <Home/>},
                 {path: "/video", element: <Video/>},
+                {path: "/instance", element: <Instance/>},
+                {path: "/kanban", element: <Kanban />},
+                {path: "/canvas", element: <Canvas />},
             ]
         },
         {path: '/login', element: <Login/>},
